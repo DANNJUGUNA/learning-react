@@ -31,7 +31,7 @@ const Form=({formdata,setformdata})=> {
         <div className='col-3'>
         <input name='qty'onChange={(event)=>{
             setqty(event.target.value)
-        }}value={qty}className="form-control form-control-sm" type="text" placeholder="quantity" aria-label=".form-control-sm example"/>
+        }}value={qty}className="form-control form-control-sm" type="number" min="1" placeholder="quantity" aria-label=".form-control-sm example"/>
         </div>  
         <div className='col-3'>
         <input name='price'onChange={(event)=>{
